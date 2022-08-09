@@ -1,7 +1,7 @@
 const std = @import("std");
 const testing = std.testing;
 
-export fn rotateLeft8(x: u8, k: isize) u8 {
+pub export fn rotateLeft8(x: u8, k: isize) u8 {
     if (k == 0) {
         return x;
     }
@@ -10,7 +10,7 @@ export fn rotateLeft8(x: u8, k: isize) u8 {
     return x << s | ((x >> (n - s)) >> 1);
 }
 
-export fn rotateLeft16(x: u16, k: isize) u16 {
+pub export fn rotateLeft16(x: u16, k: isize) u16 {
     if (k == 0) {
         return x;
     }
@@ -19,7 +19,7 @@ export fn rotateLeft16(x: u16, k: isize) u16 {
     return x << s | ((x >> (n - s)) >> 1);
 }
 
-export fn rotateLeft32(x: u32, k: isize) u32 {
+pub export fn rotateLeft32(x: u32, k: isize) u32 {
     if (k == 0) {
         return x;
     }
@@ -28,7 +28,7 @@ export fn rotateLeft32(x: u32, k: isize) u32 {
     return x << s | ((x >> (n - s)) >> 1);
 }
 
-export fn rotateLeft64(x: u64, k: isize) u64 {
+pub export fn rotateLeft64(x: u64, k: isize) u64 {
     if (k == 0) {
         return x;
     }
